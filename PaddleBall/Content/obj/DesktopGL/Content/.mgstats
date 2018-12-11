@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/ball_16x16_px.png","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/ball_16x16_px.xnb","TextureProcessor","Texture2DContent",240,1109,0.1565476
+"C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/paddle_64x16_px.png","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/paddle_64x16_px.xnb","TextureProcessor","Texture2DContent",258,4181,0.4786348
