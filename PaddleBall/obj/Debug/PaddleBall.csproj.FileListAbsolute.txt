@@ -19,3 +19,5 @@ C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\obj\Debug\PaddleBall.ex
 C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\obj\Debug\PaddleBall.pdb
 C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\bin\DesktopGL\AnyCPU\Debug\Content\assets\paddle_64x16_px.xnb
 C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\bin\DesktopGL\AnyCPU\Debug\Content\assets\ball_16x16_px.xnb
+C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\bin\DesktopGL\AnyCPU\Debug\Content\assets\collision.xnb
+C:\Users\Caleb\Desktop\paddle_ball\PaddleBall\PaddleBall\bin\DesktopGL\AnyCPU\Debug\Content\assets\block_64x32_px.xnb

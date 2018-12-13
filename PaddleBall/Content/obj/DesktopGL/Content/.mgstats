@@ -1,3 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/ball_16x16_px.png","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/ball_16x16_px.xnb","TextureProcessor","Texture2DContent",240,1109,0.1565476
+"C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/block_64x32_px.png","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/block_64x32_px.xnb","TextureProcessor","Texture2DContent",202,8277,0.3126828
+"C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/collision.wav","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/collision.xnb","SoundEffectProcessor","SoundEffectContent",12480,12541,0.7310669
 "C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/paddle_64x16_px.png","C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/bin/DesktopGL/Content/assets/paddle_64x16_px.xnb","TextureProcessor","Texture2DContent",258,4181,0.4786348

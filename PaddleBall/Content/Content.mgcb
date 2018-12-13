@@ -25,6 +25,24 @@
 /processorParam:TextureFormat=Color
 /build:assets/ball_16x16_px.png
 
+#begin assets/block_64x32_px.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:assets/block_64x32_px.png
+
+#begin assets/collision.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:assets/collision.wav
+
 #begin assets/paddle_64x16_px.png
 /importer:TextureImporter
 /processor:TextureProcessor

@@ -9,6 +9,11 @@ namespace PaddleBall {
         public float width;
         public float height;
         protected Rectangle boundingRect;
+        private bool destroyed;
+
+        public Sprite() {
+            destroyed = false;
+        }
 
         public void Load(string _file) {
 
@@ -18,7 +23,8 @@ namespace PaddleBall {
         }
 
         public void Draw(SpriteBatch spriteBatch, GameTime _gameTime) {
-            spriteBatch.Draw(texture, position, Color.White);
+            if (!destroyed)
+                spriteBatch.Draw(texture, position, Color.White);
         }
 
         public void SetPosition(Vector2 _pos) {
@@ -42,6 +48,11 @@ namespace PaddleBall {
             float dt = (float)_gameTime.ElapsedGameTime.TotalSeconds;
             position.X += ( _x * _speed) * dt;
             position.Y += ( _y * _speed ) * dt; 
+        }
+
+        public void Destroy() {
+            texture.Dispose();
+            destroyed = true;
         }
 
         public Rectangle GetBoudingRect() {

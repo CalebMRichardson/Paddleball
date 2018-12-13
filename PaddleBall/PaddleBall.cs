@@ -8,7 +8,8 @@ namespace PaddleBall {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         private Paddle paddle;
-        private Ball ball; 
+        private Ball ball;
+        private Block block;
 
         public  const int WIDTH   = 800;
         public const int HEIGHT  = 600;
@@ -34,6 +35,7 @@ namespace PaddleBall {
 
             paddle = new Paddle();
             ball = new Ball(paddle);
+            block = new Block();
 
             float paddleStartingXPos = (WIDTH / 2) - (paddle.width / 2);
             float paddleStartingYPos = HEIGHT - paddle.height;
@@ -53,7 +55,7 @@ namespace PaddleBall {
 
             paddle.Update(_gameTime);
             ball.Update(_gameTime);
-
+            block.Update(_gameTime);
             base.Update(_gameTime);
         }
 
@@ -64,6 +66,7 @@ namespace PaddleBall {
 
             paddle.Draw(spriteBatch, _gameTime);
             ball.Draw(spriteBatch, _gameTime);
+            block.Draw(spriteBatch, _gameTime);
             spriteBatch.End();
 
 
