@@ -7,12 +7,11 @@ namespace PaddleBall {
 
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
-        private Paddle paddle;
-        private Ball ball;
-        private Block block;
+        private LevelBuilder levelbuilder;
+        private ScreenManager screenManager; 
 
         public  const int WIDTH   = 800;
-        public const int HEIGHT  = 600;
+        public const int HEIGHT   = 600;
 
         public PaddleBall() {
             graphics = new GraphicsDeviceManager(this);
@@ -29,20 +28,12 @@ namespace PaddleBall {
             base.Initialize();
         }
 
-
         protected override void LoadContent() {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            paddle = new Paddle();
-            ball = new Ball(paddle);
-            block = new Block();
-
-            float paddleStartingXPos = (WIDTH / 2) - (paddle.width / 2);
-            float paddleStartingYPos = HEIGHT - paddle.height;
-
-            paddle.SetPosition(paddleStartingXPos, paddleStartingYPos);
-            paddle.SetChild(ball);
-
+            screenManager = new ScreenManager();
+            screenManager.Push(new GameScreen(screenManager)); 
+            levelbuilder = new LevelBuilder();
         }
 
         protected override void UnloadContent() {
@@ -53,9 +44,8 @@ namespace PaddleBall {
             if(GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            paddle.Update(_gameTime);
-            ball.Update(_gameTime);
-            block.Update(_gameTime);
+            screenManager.Update(_gameTime);
+
             base.Update(_gameTime);
         }
 
@@ -63,12 +53,8 @@ namespace PaddleBall {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
-            paddle.Draw(spriteBatch, _gameTime);
-            ball.Draw(spriteBatch, _gameTime);
-            block.Draw(spriteBatch, _gameTime);
+            screenManager.Draw(spriteBatch);
             spriteBatch.End();
-
 
             base.Draw(_gameTime);
         }

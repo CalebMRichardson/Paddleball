@@ -43,6 +43,12 @@
 /processorParam:Quality=Best
 /build:assets/collision.wav
 
+#begin assets/kaching.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:assets/kaching.wav
+
 #begin assets/paddle_64x16_px.png
 /importer:TextureImporter
 /processor:TextureProcessor

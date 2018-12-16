@@ -22,8 +22,8 @@ namespace PaddleBall {
             height = texture.Height;
         }
 
-        public void Draw(SpriteBatch spriteBatch, GameTime _gameTime) {
-            if (!destroyed)
+        public void Draw(SpriteBatch spriteBatch) {
+            if(!destroyed)
                 spriteBatch.Draw(texture, position, Color.White);
         }
 
@@ -35,24 +35,29 @@ namespace PaddleBall {
             position = new Vector2(_x, _y);
         }
 
+        protected void SetBoudingRectPosition(Vector2 _position) {
+            boundingRect.Location = _position.ToPoint();
+        }
+
         public void Move(Vector2 _direction, float _speed, GameTime _gameTime) {
 
             float dt = (float)_gameTime.ElapsedGameTime.TotalSeconds;
 
-            position += (_direction * _speed) * dt; 
+            position += (_direction * _speed) * dt;
 
         }
 
         public void Move(float _x, float _y, float _speed, GameTime _gameTime) {
 
             float dt = (float)_gameTime.ElapsedGameTime.TotalSeconds;
-            position.X += ( _x * _speed) * dt;
-            position.Y += ( _y * _speed ) * dt; 
+            position.X += (_x * _speed) * dt;
+            position.Y += (_y * _speed) * dt;
         }
 
-        public void Destroy() {
-            texture.Dispose();
-            destroyed = true;
+        public void Destroy(Sprite _sprite) {
+            _sprite.texture.Dispose();
+            _sprite.destroyed = true;
+            boundingRect = Rectangle.Empty;
         }
 
         public Rectangle GetBoudingRect() {

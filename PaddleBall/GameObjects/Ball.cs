@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 
@@ -13,7 +14,7 @@ namespace PaddleBall {
 
         public Ball(Paddle _paddle) {
             Load("assets/ball_16x16_px");
-            moveSpeed = 200.0f;
+            moveSpeed = 300.0f;
             movementVec = new Vector2();
             boundingRect = new Rectangle(0, 0, ( int )width, ( int )height);
             paddle = _paddle;
@@ -25,18 +26,28 @@ namespace PaddleBall {
 
             if (_lastXDirection == 0.0f) {
                 Random rand = new Random();
-                _lastXDirection = (float)rand.Next(1, 3);
+                int randNum = (int)rand.Next(1, 3);
+                if (randNum == 1) {
+                    _lastXDirection = 1; 
+                } else {
+                    _lastXDirection = -1;
+                }
+                Debug.WriteLine(_lastXDirection);
             }
 
             movementVec.X = _lastXDirection;
             movementVec.Y = -1.0f;
         }
 
-        public void Bounce() {
+        public void Bounce(Vector2 _newDirection) {
             if (movementVec.Y != 0.0f) {
-                movementVec.Y *= -1.0f;
+                movementVec = _newDirection; 
                 Collide();
             }
+        }
+
+        public Vector2 GetMovementVec() {
+            return movementVec;
         }
 
         private void Collide() {
