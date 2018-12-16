@@ -49,6 +49,9 @@
 /processorParam:Quality=Best
 /build:assets/kaching.wav
 
+#begin assets/levels.json
+/copy:assets/levels.json
+
 #begin assets/paddle_64x16_px.png
 /importer:TextureImporter
 /processor:TextureProcessor

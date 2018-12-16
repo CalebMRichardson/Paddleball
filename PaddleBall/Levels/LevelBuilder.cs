@@ -64,12 +64,15 @@ namespace PaddleBall {
 
         private void LoadLevelData() {
 
-            string levelDataPath = Environment.CurrentDirectory + "/../../../../Content/assets/levels.json"; 
+            string levelDataPath = ContentUtil.contentManger.RootDirectory + "/assets/levels.json";
             if (File.Exists(levelDataPath)) {
                 using(StreamReader r = new StreamReader(levelDataPath)) {
                     string s = r.ReadToEnd();
                     levelData = JObject.Parse(s);
+                    Debug.WriteLine("Level data found at: " + levelDataPath);
                 }
+            } else {
+                Debug.WriteLine("Cannot find levels.json at path: " + levelDataPath);
             }
         }
 
