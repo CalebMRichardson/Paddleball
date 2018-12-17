@@ -5,12 +5,12 @@ using Microsoft.Xna.Framework.Input;
 namespace PaddleBall {
     public class PaddleBall : Game {
 
-        private GraphicsDeviceManager graphics;
-        private SpriteBatch spriteBatch;
-        private LevelBuilder levelbuilder;
-        private ScreenManager screenManager; 
+        private GraphicsDeviceManager   graphics;
+        private SpriteBatch             spriteBatch;
+        private LevelBuilder            levelbuilder;
+        private ScreenManager           screenManager; 
 
-        public  const int WIDTH   = 800;
+        public const int WIDTH    = 800;
         public const int HEIGHT   = 600;
 
         public PaddleBall() {
@@ -52,6 +52,7 @@ namespace PaddleBall {
         protected override void Draw(GameTime _gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            //spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, null, null, null);
             spriteBatch.Begin();
             screenManager.Draw(spriteBatch);
             spriteBatch.End();

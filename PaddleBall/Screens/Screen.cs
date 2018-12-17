@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace PaddleBall {
     abstract class Screen {
 
-        protected ScreenManager screenManager; 
+        protected ScreenManager   screenManager; 
 
         public Screen(ScreenManager _screenManager) {
             screenManager = _screenManager; 

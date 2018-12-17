@@ -32,13 +32,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MonoGame.Framework.dll" size="1489920">
-      <assemblyIdentity name="MonoGame.Framework" version="3.8.0.213" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="MonoGame.Framework" version="3.7.1.189" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RVB63EpNVH7j4maEnMSvyRRwD7F60bQAXbT4g247+Jc=</dsig:DigestValue>
+        <dsig:DigestValue>RI1AhmmXwBxHjVvoI8dSQlMkruY5+doyl8CoVW36rTQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PaddleBall.exe" size="572888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PaddleBall.exe" size="573400">
       <assemblyIdentity name="PaddleBall" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>52AUq60oUn66tTfbwEzzRKi6YXTmCaiAD8CwXJPBXT0=</dsig:DigestValue>
+        <dsig:DigestValue>bIUDQZnlUTO0YZR5Bu5IGJJLQmvR5a5ECsmcTg4oEOs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

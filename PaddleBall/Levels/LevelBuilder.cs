@@ -10,12 +10,12 @@ namespace PaddleBall {
 
     class LevelBuilder {
 
-        private const string LEVEL = "level";
-        private int currentLevel = -1;
-        private const int LEVELWIDTH = 12;
-        private const int LEVELHEIGHT = 10;
-        private JObject levelData;
-        private List<Block> blocks; 
+        private const string   LEVEL = "level";
+        private int            currentLevel = -1;
+        private const int      LEVELWIDTH = 12;
+        private const int      LEVELHEIGHT = 10;
+        private JObject        levelData;
+        private List<Block>    blocks; 
 
         public LevelBuilder() {
             LoadLevelData();

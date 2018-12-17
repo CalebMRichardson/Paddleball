@@ -6,14 +6,14 @@ using Microsoft.Xna.Framework.Audio;
 namespace PaddleBall {
     class Block : Sprite {
 
-        private Ball ball;
-        private Paddle paddle;
-        private SoundEffect kaching;
-        public bool hit;
-        public bool canHit; 
-        public bool outOfGame;
-        private float collisionDelay;
-        private float remainingDelay; 
+        private Ball          ball;
+        private Paddle        paddle;
+        private SoundEffect   kaching;
+        public bool           hit;
+        public bool           canHit; 
+        public bool           outOfGame;
+        private float         collisionDelay;
+        private float         remainingDelay; 
 
         public Block() {
             Load("assets/block_64x32_px");
@@ -25,7 +25,7 @@ namespace PaddleBall {
             outOfGame = false;
             canHit = true;
 
-            collisionDelay = 150f; // miliseconds
+            collisionDelay = 250f; // miliseconds
             remainingDelay = collisionDelay;
 
             kaching = ContentUtil.contentManger.Load<SoundEffect>("assets/kaching");

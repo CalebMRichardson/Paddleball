@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace PaddleBall {
     class ScreenManager {
 
-        private Stack<Screen> screens; 
+        private Stack<Screen>   screens; 
 
         public ScreenManager() {
             screens = new Stack<Screen>();

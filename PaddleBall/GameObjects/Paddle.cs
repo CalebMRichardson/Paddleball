@@ -6,11 +6,10 @@ namespace PaddleBall {
 
     class Paddle : Sprite {
 
-        private float moveSpeed;
-        private bool ballAttatched = true;
-
-        private Ball ball;
-        private float lastXDirection;
+        private float   moveSpeed;
+        private bool    ballAttatched = true;
+        private Ball    ball;
+        private float   lastXDirection;
 
         public Paddle() {
             Load ( "assets/paddle_64x16_px" );

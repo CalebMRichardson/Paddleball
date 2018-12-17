@@ -4,12 +4,12 @@ using Microsoft.Xna.Framework.Graphics;
 namespace PaddleBall {
     class Sprite {
 
-        protected Texture2D texture;
-        public Vector2 position;
-        public float width;
-        public float height;
-        protected Rectangle boundingRect;
-        private bool destroyed;
+        protected Texture2D   texture;
+        public Vector2        position;
+        public float          width;
+        public float          height;
+        protected Rectangle   boundingRect;
+        private bool          destroyed;
 
         public Sprite() {
             destroyed = false;
@@ -22,11 +22,13 @@ namespace PaddleBall {
             height = texture.Height;
         }
 
-        public void Draw(SpriteBatch spriteBatch) {
-            if(!destroyed)
+        public virtual void Draw(SpriteBatch spriteBatch) {
+            if(!destroyed) {
+                //Vector2 renderPosition = new Vector2((int)position.X, (int)position.Y);
                 spriteBatch.Draw(texture, position, Color.White);
-        }
 
+            }
+        }
         public void SetPosition(Vector2 _pos) {
             position = _pos;
         }

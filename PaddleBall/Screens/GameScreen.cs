@@ -5,10 +5,10 @@ using Microsoft.Xna.Framework.Graphics;
 namespace PaddleBall {
     class GameScreen : Screen {
 
-        private Paddle paddle;
-        private Ball ball;
-        private LevelBuilder builder;
-        private List<Block> blocks; 
+        private Paddle         paddle;
+        private Ball           ball;
+        private LevelBuilder   builder;
+        private List<Block>    blocks; 
 
         public GameScreen(ScreenManager _screenManager) 
             : base(_screenManager) {
