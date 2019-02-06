@@ -19,7 +19,7 @@ namespace PaddleBall {
             builder = new LevelBuilder();
             // TODO allow save progression
             // Load level from file
-            builder.SetLevel(2);
+            builder.SetLevel(1);
             builder.Build();
             blocks = builder.GetLevelBlocks();
             foreach(Block block in blocks) {

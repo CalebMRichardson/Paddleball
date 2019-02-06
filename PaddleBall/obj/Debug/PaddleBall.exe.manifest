@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bIUDQZnlUTO0YZR5Bu5IGJJLQmvR5a5ECsmcTg4oEOs=</dsig:DigestValue>
+        <dsig:DigestValue>8YrUlcqhqDXfZW4KmSyPeS8X2afW8/7T5U8zEnC8QfQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -108,7 +108,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mEiKqBjz7QsX/bEmZHEcIRYRqpZQBHa92e5ZgzbZ8Dg=</dsig:DigestValue>
+      <dsig:DigestValue>ds+IT8YlLRKsG8w/6yy3DcBENzDAyN4icAmw1F+/CE4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\assets\paddle_64x16_px.xnb" size="4181">

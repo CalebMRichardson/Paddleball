@@ -4,11 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/ball_16x16_px.png</File>
-    <File>C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/block_64x32_px.png</File>
-    <File>C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/collision.wav</File>
-    <File>C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/kaching.wav</File>
-    <File>C:/Users/Caleb/Desktop/paddle_ball/PaddleBall/PaddleBall/Content/assets/paddle_64x16_px.png</File>
+    <File>C:/Users/caleb.richardson/Desktop/pdb/Paddleball/PaddleBall/Content/assets/ball_16x16_px.png</File>
+    <File>C:/Users/caleb.richardson/Desktop/pdb/Paddleball/PaddleBall/Content/assets/block_64x32_px.png</File>
+    <File>C:/Users/caleb.richardson/Desktop/pdb/Paddleball/PaddleBall/Content/assets/collision.wav</File>
+    <File>C:/Users/caleb.richardson/Desktop/pdb/Paddleball/PaddleBall/Content/assets/kaching.wav</File>
+    <File>C:/Users/caleb.richardson/Desktop/pdb/Paddleball/PaddleBall/Content/assets/paddle_64x16_px.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
